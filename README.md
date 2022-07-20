@@ -29,10 +29,10 @@ used in future projects, despite my love for hand-written readmes.
 the Prompts provided (aka the promptUser functions)
  
  ## Credits
- - N/A, no guides were used. However, I'd like to give a big shoutout to Lindsay, Kristen, and Kristina for our little study-groups!! Y'all are the biggest help and motivators.
+ - N/A, no guides were used. I'd like to give a big shoutout to Lindsay, Kristen, and Kristina for our little study-groups!! Y'all are the biggest help and motivators.
  
  ## Collaborators
- - 
+ - false
  
  ## Features
  - false
