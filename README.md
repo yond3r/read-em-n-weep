@@ -11,7 +11,9 @@
  8. [Contact](#contact)
  
  ## Screenshots
- - ![alt text](https://place-puppy.com/300x300)
+ - ![alt text](/images/readmescreen.png)
+ - ![alt text](https://youtu.be/0Ckpo-wNMNo)
+ - ![alt text](https://drive.google.com/file/d/1bpOrLdMbHkNSUXu4dN7WyMUQY3PXLeeQ/view?usp=sharing)
  
  ## Description 
  - The project was intended (and assumably, succeeded?) to be a README generator -- that will be 
