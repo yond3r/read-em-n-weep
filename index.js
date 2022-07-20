@@ -1,15 +1,12 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utilities/generateMarkdown')
+// const generateMarkdown = require('./utilities/generateMarkdown')
 
-// console.log("howdy");
-
-// Readme.md in the place of where a HTML file would be in the mini project??
-
+// const writeFileAsync = util.promisify(fs.writeFile);
 
 //prompting the user
-inquirer
-    .prompt ([
+function promptUser(){
+    return inquirer.prompt ([
         {
             type: "input",
             message: "What is the intended title of your project(s)?",
@@ -64,10 +61,87 @@ inquirer
             message: "Any questions? Please reach out me @ my github link, OR add your own, so others can ask questions!",
             name: "github"
         }
-    ])
-
+    ]);
+}
 // .then((answers) => {
 //     generateMarkdown(answers);
 // });
 
+// .then((ans) => {
+//     console.log(ans);
+//     const data = generateReadMe(ans);
+//     fs.writeFile(`./output/${ans.title}README.md`, data,
+//     (err) => err ? console.log(err) : console.log ("We did it (-:")
+//     );
+// }) 
 
+function generateMarkdown(data) {
+        fs.writeFile(`./output/README.md`, 
+`## ${data.title}
+    
+ ##Table of Contents 
+ 1. [Screenshots](#screenshots)
+ 2. [Description](#description)
+ 3. [Usage](#usage)
+ 4. [Credits](#credits)
+ 5. [Collaborators](#collaborators)
+ 6. [Features](#features)
+ 7. [License](#license)
+ 8. [Contact](#contact)
+ 
+ ## Screenshots
+ - ${data.screenshots}
+ 
+ ## Description 
+ - ${data.description}
+ 
+ ## Usage
+ - ${data.usage}
+ 
+ ## Credits
+ - ${data.credits}
+ 
+ ## Collaborators
+ - ${data.potential}
+ 
+ ## Features
+ - ${data.features}
+ 
+ ## License
+ - ${completeLicense(data.license)}
+ 
+ ## Contact
+ - ${data.github}
+ `,
+    (err) => err ? console.log(err) : console.log("yay (-:"))
+    }
+
+function completeLicense(license) {
+    if (license === "Apache") {
+        return '![License: Apache](https://opensource.org/licenses/Apache-2.0)'
+    }
+    if (license === "MIT") {
+        return '![License: MIT](https://opensource.org/licenses/MIT)'
+    }
+    if (license === "Mozilla") {
+        return '[License: Mozilla](https://opensource.org/licenses/MPL-2.0)'
+    }
+    if (license === "None") {
+        return ''
+    }
+}
+
+async function init() {
+    try {
+        const answers = await promptUser();
+        const generateContent = generateMarkdown(answers);
+
+        // await writeFileAsync('./output/README.md', generateContent);
+            console.log("lo hicimos (-:");
+        
+     } catch(err) {
+                console.log(err);
+            }
+    }
+
+    init();
