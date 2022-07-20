@@ -12,8 +12,10 @@
  
  ## Screenshots
  - ![alt text](/images/readmescreen.png)
- - ![alt text](https://youtu.be/0Ckpo-wNMNo)
- - ![alt text](https://drive.google.com/file/d/1bpOrLdMbHkNSUXu4dN7WyMUQY3PXLeeQ/view?usp=sharing)
+
+ ## Video URLs
+ - [The YouTube Link w/ the Read Em n Weep video](https://youtu.be/0Ckpo-wNMNo)
+ - [The Drive Link w/ the Read Em n Weep video](https://drive.google.com/file/d/1bpOrLdMbHkNSUXu4dN7WyMUQY3PXLeeQ/view?usp=sharing)
  
  ## Description 
  - The project was intended (and assumably, succeeded?) to be a README generator -- that will be 
