@@ -13,6 +13,9 @@
  ## Screenshots
  - ![alt text](/images/readmescreen.png)
 
+## Video
+https://user-images.githubusercontent.com/106720762/179883386-c0877851-0c18-489c-80a2-12acfa6d7969.mp4
+
  ## Video URLs
  - [The YouTube Link w/ the Read Em n Weep video](https://youtu.be/0Ckpo-wNMNo)
  - [The Drive Link w/ the Read Em n Weep video](https://drive.google.com/file/d/1bpOrLdMbHkNSUXu4dN7WyMUQY3PXLeeQ/view?usp=sharing)
@@ -26,7 +29,7 @@ used in future projects, despite my love for hand-written readmes.
 the Prompts provided (aka the promptUser functions)
  
  ## Credits
- - N/A, no guides were used.
+ - N/A, no guides were used. However, I'd like to give a big shoutout to Lindsay, Kristen, and Kristina for our little study-groups!! Y'all are the biggest help and motivators.
  
  ## Collaborators
  - 
